@@ -1,0 +1,14 @@
+name = "controle-compras"
+compatibility_date = "2026-02-16"
+
+[env.production]
+name = "controle-compras-prod"
+
+[build]
+command = "npm run build"
+cwd = "."
+watch_paths = ["src/**/*.tsx"]
+
+[[assets]]
+directory = "dist"
+binding = "ASSETS"
